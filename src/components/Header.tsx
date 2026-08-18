@@ -11,7 +11,7 @@ export const Header: React.FC = () => {
             <div className="space-y-1.5">
               <div className="flex items-center gap-2">
                 <span className="text-amber-400 text-sm font-mono">&gt;</span>
-                <h1 className="text-2xl sm:text-3xl text-white font-bold tracking-tight lowercase">
+                <h1 className="text-2xl sm:text-3xl text-white font-bold tracking-tight">
                   {profileData.name}
                 </h1>
               </div>

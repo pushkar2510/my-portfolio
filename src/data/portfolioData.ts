@@ -70,12 +70,12 @@ export interface ProfileData {
 
 export const profileData: ProfileData = {
   name: "Pushkar Gaikwad",
-  role: "Founding Partner @ Agilique-Solutions LLP | Co-Founder @ Team-Radiant | Ex - Application Developer @ 360-View-Tech",
+  role: "Founding Partner @ Agilique-Solutions LLP | Co-Founder @ Team-Radiant | Application Developer @ 360-View-Tech",
   experience: "Full-Stack Mobile & Web Developer",
   email: "contact@pushkarbuilds.tech",
   location: "Nashik, Maharashtra, India",
   tagline: "Building scalable AI solutions, modern mobile apps & web platforms",
-  resumeUrl: "#resume",
+  resumeUrl: "/resume.pdf",
   socials: {
     github: "https://github.com/pushkar2510",
     linkedin: "https://linkedin.com/in/pushkar2510",
@@ -137,7 +137,7 @@ export const experienceData: Experience[] = [
   },
   {
     id: 2,
-    role: "Application Developer",
+    role: "Core Member & Application Developer",
     company: "360 View Tech",
     type: "Full-time",
     startDate: "2025-06-01",
