@@ -5,7 +5,7 @@ import { profileData } from "@/data/portfolioData";
 export const Footer: React.FC = () => {
   return (
     <footer className="pb-8 text-center space-y-3 px-4 border-t border-neutral-800/60 pt-6">
-      <div className="flex items-center justify-center gap-5">
+      <nav aria-label="Social links" className="flex items-center justify-center gap-5">
         {profileData.socials.github && (
           <a
             href={profileData.socials.github}
@@ -39,7 +39,7 @@ export const Footer: React.FC = () => {
             <Instagram className="w-4 h-4" />
           </a>
         )}
-      </div>
+      </nav>
       <p className="text-neutral-500 text-xs">
         © {new Date().getFullYear()} {profileData.name}. All rights reserved.
       </p>

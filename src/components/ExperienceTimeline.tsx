@@ -4,7 +4,8 @@ import { experienceData, calculateDuration } from "@/data/portfolioData";
 
 export const ExperienceTimeline: React.FC = () => {
   return (
-    <div className="space-y-6 animate-fadeIn">
+    <section aria-label="Work Experience" className="space-y-6 animate-fadeIn">
+      <h2 className="sr-only">Work Experience</h2>
       <div className="relative border-l border-neutral-800 pl-4 sm:pl-6 space-y-8">
         {experienceData.map((exp) => (
           <div key={exp.id} className="relative group">
@@ -20,7 +21,7 @@ export const ExperienceTimeline: React.FC = () => {
                 </div>
                 <span className="text-neutral-500 text-xs flex-shrink-0 flex items-center gap-1">
                   <Calendar className="w-3 h-3 text-neutral-600" />
-                  {calculateDuration(exp.startDate, exp.endDate)}
+                  <time>{calculateDuration(exp.startDate, exp.endDate)}</time>
                 </span>
               </div>
 
@@ -45,11 +46,11 @@ export const ExperienceTimeline: React.FC = () => {
               </div>
 
               {exp.description && exp.description.length > 0 && (
-                <div className="space-y-1 text-xs sm:text-sm text-neutral-400 leading-relaxed pt-1">
+                <ul className="space-y-1 text-xs sm:text-sm text-neutral-400 leading-relaxed pt-1 list-none">
                   {exp.description.map((item, idx) => (
-                    <p key={idx}>• {item}</p>
+                    <li key={idx}>• {item}</li>
                   ))}
-                </div>
+                </ul>
               )}
 
               {exp.skills && exp.skills.length > 0 && (
@@ -68,6 +69,6 @@ export const ExperienceTimeline: React.FC = () => {
           </div>
         ))}
       </div>
-    </div>
+    </section>
   );
 };

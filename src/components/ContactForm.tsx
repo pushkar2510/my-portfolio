@@ -9,7 +9,7 @@ export const ContactForm: React.FC = () => {
   const [formState, handleFormSubmit] = useForm("mjybakwd");
 
   return (
-    <div className="space-y-6 animate-fadeIn">
+    <section aria-label="Contact" className="space-y-6 animate-fadeIn">
       <div className="space-y-1">
         <h2 className="text-white text-base font-medium flex items-center gap-2">
           <Sparkles className="w-4 h-4 text-amber-400" />
@@ -124,6 +124,6 @@ export const ContactForm: React.FC = () => {
           </div>
         </form>
       )}
-    </div>
+    </section>
   );
 };
